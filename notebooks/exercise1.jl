@@ -197,6 +197,38 @@ begin
 	scatter(X1, Y1, label="30% Correlated", xlabel="X1", ylabel="Y1", title="Scatter Plot of X1 vs Y1")
 end
 
+# ╔═╡ a4bdffe1-bcb7-4093-bef3-736574e7ecc6
+coeffs = [5, 7, 3, 4, 5]
+
+# ╔═╡ 716502ea-8341-491f-9de2-d1b2366f4772
+x = 2
+
+# ╔═╡ 8b4e4953-dbf4-48b0-a8bd-32e6d711eb66
+sum([coeffs[n]*x^(n-1) for n in 1:length(coeffs)])
+
+# ╔═╡ bcc2a4ba-84c0-4afe-9b3c-1728102d079c
+
+
+# ╔═╡ 94d1d395-7660-451c-bc78-25aef69079e7
+length(coeffs)
+
+# ╔═╡ ce86e0cf-fbd0-4316-943c-5d57ecdb0cfd
+for i in 1:length(coeffs)
+	println(i)
+end
+
+# ╔═╡ 723054bf-33b2-4253-b108-d546003e5a4f
+sum(coeffs)
+
+# ╔═╡ 3875f0cb-766e-4531-a070-e50dbcbc5366
+rand(2:10, 10)
+
+# ╔═╡ 157c8961-94b1-4b9b-995f-ebae1615890c
+
+
+# ╔═╡ 5a665f57-223e-41fc-aa57-f589b94d2d01
+
+
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
@@ -1354,5 +1386,15 @@ version = "1.4.1+1"
 # ╠═80f3c6ba-506f-443e-9ce8-50cd947e32e5
 # ╟─39b203aa-61ca-4faa-a60a-145635f0990c
 # ╠═879ec537-62d7-4515-9460-b4b86cae45bb
+# ╠═a4bdffe1-bcb7-4093-bef3-736574e7ecc6
+# ╠═716502ea-8341-491f-9de2-d1b2366f4772
+# ╠═8b4e4953-dbf4-48b0-a8bd-32e6d711eb66
+# ╠═bcc2a4ba-84c0-4afe-9b3c-1728102d079c
+# ╠═94d1d395-7660-451c-bc78-25aef69079e7
+# ╠═ce86e0cf-fbd0-4316-943c-5d57ecdb0cfd
+# ╠═723054bf-33b2-4253-b108-d546003e5a4f
+# ╠═3875f0cb-766e-4531-a070-e50dbcbc5366
+# ╠═157c8961-94b1-4b9b-995f-ebae1615890c
+# ╠═5a665f57-223e-41fc-aa57-f589b94d2d01
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
